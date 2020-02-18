@@ -3,23 +3,20 @@ import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Castle from "./components/Castle";
 import Battle from "./components/Battle";
+import "../styles/app.css";
+import "../styles/dashboard.css";
 
 function App() {
     return (
-        <div>
+        <div className="app">
             <Castle></Castle>
             <div className="row">
-                <div className="col-sm-9 row">
-                    {/* <div classname="row"> */}
-                        <Battle></Battle>
-                        <Battle></Battle>
-                        <Battle></Battle>
-                    {/* </div> */}
-                </div>
-                <div className="col-sm-3">
-                    Dashboard
-                </div>
-
+                <Battle></Battle>
+                <Battle></Battle>
+                <Battle></Battle>
+            </div>
+            <div className="row dashboard">
+                Dashboard
             </div>
         </div>
     );
