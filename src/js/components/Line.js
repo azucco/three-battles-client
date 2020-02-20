@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/line.css";
 
 function Line(props) {
 
   const rowClass = "row " + props.color;
   let army = props.army;
-  let setArmy = props.setArmy;
+  const setArmy = props.setArmy;
   const total = props.total;
   
   return (

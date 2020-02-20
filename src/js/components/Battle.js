@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import Line from "./Line";
 import "../../styles/battle.css";
 
@@ -33,7 +33,7 @@ function Battle() {
   ]
 
   lines.sort(function (a, b) {
-    return parseInt(a.archery) - parseInt(b.archery);
+    return parseInt(a.army) - parseInt(b.army);
   });
 
   return (
