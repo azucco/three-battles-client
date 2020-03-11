@@ -3,9 +3,12 @@ import "../../styles/line.css";
 
 function Line(props) {
 
-  const rowClass = "row " + props.color;
-  let army = props.army;
-  const setArmy = props.setArmy;
+  const row = props.row
+  let armies = props.armies;
+  let army = armies[row].army;
+  const color = armies[row].color;
+  const rowClass = "row " + color;
+  const setArmies = props.setArmies;
   const total = props.total;
   
   return (
@@ -18,7 +21,8 @@ function Line(props) {
             value={unit}
             onChange={e => {
               army[index] = parseInt(army[index]) + parseInt(e.target.value);
-              return setArmy(army)
+              armies.splice(row, 1, {army, color})
+              return setArmies(newArmies)
             }}
           />
         )
