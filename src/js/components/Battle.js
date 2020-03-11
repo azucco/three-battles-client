@@ -11,12 +11,6 @@ function Battle() {
     {army: [0, 0, 0], color: "yellow"},
   ])
 
-  /* lines.sort(function (a, b) {
-    return parseInt(a.army) - parseInt(b.army);
-  }); */
-
-  
-
   return (
     <div className="col-sm-4 battle">
       {armies.map((el, index) => {

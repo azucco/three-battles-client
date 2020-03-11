@@ -20,8 +20,9 @@ function Line(props) {
             className="form-control col-sm-3 trasparent"
             value={unit}
             onChange={e => {
-              army[index] = parseInt(army[index]) + parseInt(e.target.value);
-              armies.splice(row, 1, {army, color})
+              army[index] = parseInt(e.target.value);
+              let newArmies = [...armies]
+              newArmies.splice(row, 1, {army, color})
               return setArmies(newArmies)
             }}
           />
