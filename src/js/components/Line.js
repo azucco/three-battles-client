@@ -10,6 +10,8 @@ function Line(props) {
   const rowClass = "row " + color;
   const setArmies = props.setArmies;
   const total = props.total;
+  const focusOn = props.focusOn;
+  const setFocusOn = props.setFocusOn;
   
   return (
     <div className={rowClass}>
@@ -25,6 +27,9 @@ function Line(props) {
               newArmies.splice(row, 1, {army, color})
               return setArmies(newArmies)
             }}
+            min="0"
+            onFocus={() => setFocusOn(parseInt(focusOn) + 1)}
+            onBlur={() => setFocusOn(parseInt(focusOn) - 1)}
           />
         )
       })}
