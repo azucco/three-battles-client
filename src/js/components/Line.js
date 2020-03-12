@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/line.css";
+import "../../styles/line.scss";
 
 function Line(props) {
 

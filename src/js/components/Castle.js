@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import "../../styles/castle.css";
+import "../../styles/castle.scss";
 
 function Castle() {
 

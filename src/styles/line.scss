@@ -1,0 +1,21 @@
+@import 'Global.scss';
+
+.red {
+    background-color: rgba($red, .3);
+}
+
+.blue {
+    background-color: rgba($blue, .3);
+}
+
+.yellow {
+    background-color: rgba($yellow, .3);
+}
+
+.green {
+    background-color: rgba($green, .3);
+}
+
+.trasparent {
+    background-color: rgba(0, 0, 0, 0) !important;
+}

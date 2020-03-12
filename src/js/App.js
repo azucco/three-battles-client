@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Castle from "./components/Castle";
 import Battle from "./components/Battle";
-import "../styles/app.css";
-import "../styles/dashboard.css";
+import "../styles/app.scss";
+import "../styles/dashboard.scss";
 
 function App() {
     return (

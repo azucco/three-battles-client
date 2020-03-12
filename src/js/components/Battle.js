@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Line from "./Line";
-import "../../styles/battle.css";
+import "../../styles/battle.scss";
 
 function Battle() {
 
