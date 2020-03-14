@@ -21,7 +21,7 @@ function Battle() {
   }
 
   return (
-    <div className="col-sm-4 battle">
+    <div className="col-sm battle">
       {armies.map((el, index) => {
         const total = el.army.reduce((a, b) => a + b)
         return <Line

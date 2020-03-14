@@ -19,7 +19,7 @@ function Line(props) {
         return (
           <input
             type="number"
-            className="form-control col-sm-3 trasparent"
+            className="form-control col-sm-4 trasparent"
             value={unit}
             onChange={e => {
               army[index] = parseInt(e.target.value);
@@ -33,7 +33,7 @@ function Line(props) {
           />
         )
       })}
-      <input type="number" className="form-control col-sm-3" value={total} disabled />
+      {/* <input type="number" className="form-control col-sm" value={total} disabled /> */}
     </div>
   );
 

@@ -1,14 +1,18 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Castle from "./components/Castle";
 import Battle from "./components/Battle";
 import "../styles/app.scss";
 import "../styles/dashboard.scss";
+import FightModal from './components/FightModal';
 
 function App() {
+
+    const [showModal, setShowModal] = useState(false)
+
     return (
-        <div className="app">
+        <div className="container">
             <Castle></Castle>
             <div className="row">
                 <Battle></Battle>
@@ -16,13 +20,14 @@ function App() {
                 <Battle></Battle>
             </div>
             <div className="row dashboard">
-                Dashboard
+                <button type="button" className="btn btn-primary">Fight!</button>
             </div>
+            <FightModal></FightModal>
         </div>
     );
 }
 
 export default App;
 
-const wrapper = document.getElementById("container");
+const wrapper = document.getElementById("app");
 wrapper ? ReactDOM.render(<App />, wrapper) : false;
