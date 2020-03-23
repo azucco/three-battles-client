@@ -22,7 +22,6 @@ function App() {
             <div className="row dashboard">
                 <button type="button" className="btn btn-primary">Fight!</button>
             </div>
-            <FightModal></FightModal>
         </div>
     );
 }
